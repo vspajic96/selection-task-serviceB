@@ -14,10 +14,4 @@ public class ServiceBApplication {
 		SpringApplication.run(ServiceBApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner init(AccountRepository accountRepository) {
-		return args -> {
-			accountRepository.save(new Account());
-		};
-	}
 }

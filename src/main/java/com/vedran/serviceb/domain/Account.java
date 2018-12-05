@@ -8,9 +8,9 @@ import lombok.ToString;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.math.BigInteger;
 import java.sql.Timestamp;
 
+@RequiredArgsConstructor
 @Getter
 @ToString
 @EqualsAndHashCode
@@ -21,8 +21,8 @@ public final class Account {
     @GeneratedValue
     private Integer id;
 
-    private String balance;
-    private Timestamp updatedAt;
+    private final String balance;
+    private final Timestamp updatedAt;
 
     public Account() {
         balance = "0";
