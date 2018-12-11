@@ -1,10 +1,13 @@
-package com.vedran.serviceb;
+package com.vedran.serviceb.Database;
 
 import com.vedran.serviceb.domain.Account;
 import com.vedran.serviceb.repository.AccountRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+/*
+    Initializes database on startup
+ */
 @Component
 public class DBInitializer implements CommandLineRunner {
 

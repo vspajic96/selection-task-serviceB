@@ -9,11 +9,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class AccountController {
+
+    private final AccountRepository accountRepository;
 
     @Autowired
-    private AccountRepository accountRepository;
+    AccountController(final AccountRepository accountRepository) {
+        this.accountRepository = accountRepository;
+    }
 
+    /*
+        Responds to get requests by returning account state as JSON
+     */
     @CrossOrigin
     @GetMapping("/balance")
     public @ResponseBody Iterable<Account> getBalance() {

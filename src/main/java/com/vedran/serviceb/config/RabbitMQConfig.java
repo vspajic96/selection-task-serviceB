@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
 
+/*
+    Configuration required for listening to Rabbit messages
+ */
 @Configuration
 public class RabbitMQConfig implements RabbitListenerConfigurer {
 

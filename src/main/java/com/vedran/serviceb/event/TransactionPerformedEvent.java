@@ -8,6 +8,9 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.math.BigInteger;
 
+/*
+    Model of received event from service-a
+ */
 @RequiredArgsConstructor
 @Getter
 @ToString

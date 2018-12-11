@@ -7,6 +7,9 @@ import org.springframework.amqp.AmqpRejectAndDontRequeueException;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
+/*
+    Handles received events and tries to perform a transaction on the account
+ */
 @Slf4j
 @Component
 class EventSubscriber {

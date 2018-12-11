@@ -10,6 +10,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.sql.Timestamp;
 
+/*
+    JPA entity representing an account
+ */
 @RequiredArgsConstructor
 @Getter
 @ToString

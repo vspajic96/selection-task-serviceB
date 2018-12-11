@@ -10,11 +10,16 @@ import javax.transaction.Transactional;
 import java.sql.Timestamp;
 
 public interface AccountRepository extends CrudRepository<Account, Integer> {
-
+    /*
+        Return account balance as string
+     */
     @Query("SELECT(a.balance) FROM com.vedran.serviceb.domain.Account a " +
             "WHERE a.id = :accountId")
     String getBalance(@Param("accountId") final Integer accountId);
 
+    /*
+        Update account balance
+     */
     @Transactional
     @Modifying
     @Query("UPDATE Account a SET a.balance = :newBalance, a.updatedAt =:timestamp " +
