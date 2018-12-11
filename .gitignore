@@ -1,3 +1,6 @@
+/build/reports/tests/test
+/build/test-results/test
+
 ### STS ###
 .apt_generated
 .classpath
@@ -13,6 +16,7 @@
 *.iml
 *.ipr
 /out/
+
 
 ### NetBeans ###
 /nbproject/private/
