@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.vedran.serviceb.event.EventSubscriberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-11T15:07:52" hostname="ubuntuveca" time="2.294">
-  <properties/>
-  <testcase name="transactionPerformedEventReceivedTest" classname="com.vedran.serviceb.event.EventSubscriberTest" time="2.294"/>
-  <system-out><![CDATA[16:07:54.010 [Test worker] INFO com.vedran.serviceb.event.EventSubscriber - Transaction performed event received: TransactionPerformedEvent(amount=100, currency=EUR)
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
