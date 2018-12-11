@@ -1,5 +1,5 @@
 # selection-task-serviceB
-This microservice is developed using Spring Boot, and it's tasked with receiving and handling RabbitMQ messages generated in Service A.
+This microservice is developed using Spring Boot, and it's tasked with receiving and handling AMQP messages generated in Service A.
 It's purpose is also to initialize a database with an account to perform transactions on.
 
 Upon receiving a message, Service B logs the received `TransactionPerformedEvent` and updates the account balance accordingly.
